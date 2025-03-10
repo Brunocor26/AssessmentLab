@@ -20,18 +20,14 @@ article {
 }
 
 aside {
-    flex: 1;
+    flex: 0.5;
     background: beige;
     padding: 10px;
     border-radius: 5px;
 }
 
-/*contacto*/
-.contacto {
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 5px;
+#contact{
+    text-align: left;
 }
 
 /* mensagem ocupa 100% da largura */
@@ -45,39 +41,31 @@ form {
     flex-direction: column;
 }
 
-/* Coloca Nome e Email na mesma linha */
 .form-group {
     display: flex;
-    gap: 20px; /* Espaço entre os campos */
+    gap: 130px; 
 }
 
 .form-group input {
-    flex: 1; /* Faz os inputs ocuparem espaço igual */
-}
-
-/* Garante que a mensagem ocupe 100% da largura */
-textarea {
-    width: 100%;
-}
-input:focus, textarea:focus {
-    border-color: #f00000; /* Muda a cor da borda ao focar */
-    box-shadow: 0 0 5px rgba(240, 0, 0, 0.5); /* Adiciona um brilho ao redor */
-    outline: none; /* Remove o contorno padrão do navegador */
+    flex: 1;
+    width: 150%; 
     
 }
 
-
-label {
-    margin: 10px 0 5px;
+textarea {
+    width: 100%;
+    resize: none;
 }
 
-input {
-    width: 100%;
+input:focus, textarea:focus {
+    border-color: #f00000; 
+    box-shadow: 3px 3px 3px rgba(240, 0, 0, 0.5); 
+    outline: none; 
     
 }
 
 .btn-enviar {
-    background-color: #333;
+    background-color: grey;
     color: white;
     padding: 10px;
     border: none;
@@ -99,7 +87,7 @@ footer {
 }
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*sublinhado*/
     margin: 0 10px;
     font-size: 18px;
     position: relative;
@@ -110,15 +98,15 @@ nav a:hover {
 }
 nav a::after {
     content: "";  /* Cria um pseudo-elemento vazio */
-    position: absolute;  /* Permite posicionamento absoluto em relação ao <a> */
-    left: 0;  /* Alinha o pseudo-elemento à esquerda do link */
-    bottom: -3px;  /* Posiciona o sublinhado ligeiramente abaixo do link */
-    width: 100%;  /* Faz o sublinhado ocupar toda a largura do link */
-    height: 2px;  /* Define a espessura do sublinhado */
+    position: absolute;  /* Permite posicionamento absoluto em relaÃ§Ã£o ao <a> */
+    left: 0;  /* Alinha o pseudo-elemento Ã  esquerda  */
+    bottom: -3px;  /* Mete o sublinhado  em baixo do link */
+    width: 100%;  
+    height: 2px;  /* espessura do sublinhado */
     background-color: #f00000;  /* Define a cor do sublinhado */
     
-    transform: scaleX(0);  /* Inicialmente, o sublinhado está "escondido" */
-    transition: transform 0.3s ease-in-out;  /* Adiciona uma animação suave */
+    transform: scaleX(0);  /* Inicialmente, o sublinhado estÃ¡ "escondido" */
+    transition: transform 0.3s ease-in-out;  /* Adiciona uma animaÃ§Ã£o suave */
 }
 
 nav a:hover::after {
